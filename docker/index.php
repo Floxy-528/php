@@ -72,7 +72,7 @@
     <?php 
     $num = 16;
     for ($i = 1; $i < $num; $i++) {
-        echo "Number is ". $i ."<br>";
+        echo "Number is  $i <br>";
     }
     ?>
 
@@ -81,7 +81,7 @@
     $num = 16;
     $i = 1;
     while ($i < $num) {
-        echo  $i. " is less than " .$num . "<br>";
+        echo  "$i  is less than $num <br>";
         $i++ ;
     }
 ?>
@@ -90,13 +90,11 @@
 <?php
 $femaleNames = ["Floxy", "Annabelle", "Rhoda", "Bella", "Joy"];
 foreach($femaleNames as $femaleName) {
-    echo "". $femaleName ."<br>";
+    echo "$femaleName <br>";
 }
 ?>
 
         
-
-
     
 </body>
 </html>

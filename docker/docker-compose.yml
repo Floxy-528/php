@@ -1,9 +1,9 @@
-services:
-    php:
-        image: php:8.2-apache
-        ports:
-            - "8080:80"
-        volumes:
-            - .:/var/www/html
+version: '3.8'
 
-            
+services:
+  php:
+    build: .                        # buidling the image from Dockerfile
+    ports:
+      - "8080:80"                   # map localhost:8080 to container:80(inside Docker container)
+    volumes:
+      - .:/var/www/html             
